@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/plantilla.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Questrial&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>pruebas</title>
+</head>
+
+<body class="bg-success p-2 text-dark bg-opacity-50">
+
+    <section class="container-fluid">
+        <div class="row">
+
+            <div class="col" id="div-cabecera">
+                <div class="position-absolute top-10 start-0">
+                    <button class="consultar" type="button" id="#consulta">
+                        <i class="fa-solid fa-arrow-right"></i> Consultar
+                    </button>
+                </div>
+                <h1 class="fw-bold">Proyecto Final</h1>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <div id="div-imagen">
+                    <img id="header-image" class="circle" src="/Imagen/boss_man-128.png" alt="">
+                    <div class="text-center fs-1 fw-bold mt-5 bs-success-border-subtle" id="user-id"> Cabral Cristian
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5 bg-success text-dark bg-opacity-25 border border-primary-subtle" style="height:1000px ;">
+                <p class="datos_personales text-center">Datos Personales</p>
+                <div>
+                    <span class="line">
+                        <span >
+                            <span class="bi bi-house-door div-datosI"></span>
+                            
+                            <span>:</span>
+                            <span class="div-datosII fw-bold" id="pais"></span>
+                        </span>
+                    </span>
+                    <br>
+                    <span class="line">
+                        <span>
+                            <span class="div-datosI">Ciudad</span>
+                            <span>:</span>
+                            <span class="div-datosII fw-bold align-items-end" id="ciudad"></span>
+                        </span>
+                    </span>
+                    <br>
+                    <span class="line">
+                        <span>
+                            <span class="div-datosI">Estado</span>
+                            <span>:</span>
+                            <span class="div-datosII fw-bold" id="estado"> </span>
+                        </span>
+                    </span>
+                    <br>
+                    <span class="line">
+                        <span>
+                            <span class="div-datosI"> Código Postal</span>
+                            <span>:</span>
+                            <span class="div-datosII fw-bold" id="cp"> </span>
+                        </span>
+                    </span>
+                    <br>
+                    <span class="line">
+                        <span>
+                            <span class="div-datosI">Domicilio</span>
+                            <span>:</span>
+                            <span class="div-datosII fw-bold" id="domicilio"> </span>
+                        </span>
+                    </span>
+                    <br>
+                    <span class="line">
+                        <span>
+                            <span class="bi bi-envelope-at div-datosI"></span>
+                            <span>:</span>
+                            <span class="div-datosII fw-bold" id="email"> </span>
+                        </span>
+                    </span>
+                    <br>
+                    <span class="line">
+                        <span>
+                            <span class="bi bi-telephone div-datosI"></span>
+                            <span>:</span>
+                            <span class="div-datosII fw-bold" id="celular"> </span>
+                        </span>
+                    </span>
+
+                    <br>
+                    <span class="line">
+                        <span>
+                            <span class="bi bi-calendar3 div-datosI"> </span>
+                            <span>:</span>
+                            <span class="div-datosII fw-bold" id="edad"> </span>
+                        </span>
+                    </span>
+                    <br>
+                    <span class="line">
+                        <span>
+                            <span class="div-datosI">Fecha nac</span>
+                            <span>:</span>
+                            <span class="div-datosII fw-bold" id="fec-nac"> </span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="col-5 bg-success bg-opacity-25 border border-primary-subtle">
+                <div class="">
+                    <button type="button" class="btn btn-success" data-bs-target="#contenedor1"
+                        data-bs-toggle="collapse" aria-controls="contenedor1" aria-expanded="false" onclick="showexperiencia()"> Experiencia
+                        Laboral</button>
+                    <button type="button" class="btn btn-success" data-bs-target="#contenedor2"
+                        data-bs-toggle="collapse" aria-controls="contenedor2" aria-expanded="false" onclick="showestudios()"> Estudios
+                        Cursados</button>
+                </div>
+
+                <div class="collapse" id="contenedor1" >
+                    <p class="datos_personales text-start">Experiencia Laboral</p>
+                    <div class="container">
+
+                        <p class="div-experiencia">1997-2000 Hospital Garrahan</p>
+                        <pre>
+    Me desempeñe como tecnico de computadoras,
+    luesgo pase al sector de asignación de turnos
+    </pre>
+
+                        <p class="div-experiencia">2001-2003 Policia Buenos Aires</p>
+                        <pre>
+    me desempeñe como desempeñe como profesor, 
+    dando clases de sistemas a cursos reducidos
+    </pre>
+                        <p class="div-experiencia">2003-2007 Municipalidad de Fcio Varela</p>
+                        <pre>
+    Me desempeñe como Asesor en Políticas Ambientales, siendo parte del 
+    grupo de espacios verdes de la SENPLADES.
+    </pre>
+                        <p class="div-experiencia">2008-2015 Banco Macro</p>
+                        <pre>
+    Me desempeñe como la voz de ingeniería con el conocimiento y 
+    la experiencia necesaria para analizar problemas
+    de fabricación y con la capacidad de solucionar problemas técnicos
+    </pre>
+                        <p class="div-experiencia">2015-actualidad Soluciones informatica</p>
+                        <pre>
+    Actualmente me desempeño como diseñador gráfico, 
+    con más de 5 años de experiencia ofreciendo diversos servicios, 
+    un extenso portafolio, y un importante número de clientes
+    de prestigio tanto local como internacional. 
+    </pre>
+                    </div>
+                </div>
+                <div class="collapse" id="contenedor2">
+                    <p class="datos_personales text-start">Estudios Cursados</p>
+                    <div class="container">
+
+                        <p class="div-experiencia">Universidad de Buenos Aires</p>
+    <pre>
+    Analista de sistemas
+    </pre>
+
+                        <p class="div-experiencia">Administración Aduanera - UAI</p>
+                        <pre>
+    Despachante de aduanas
+    </pre>
+    <p class="div-experiencia">Escuela de gastronomia</p>
+                        <pre>
+    Carrera de Chef Profesiona
+    </pre>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="/Js/datos.js"></script>
+</body>
+
+</html>
+
+<!--    <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+                <p class="datos_personales text-center">Estudios cursados</p>
+            </div>
+            <div>
+                <p id="titulos">1990-1993 : Acompañante Terapéutico - Universidad de Buenos aires  </p>
+                <p id="titulos">1995-1999 : Administración Aduanera - UAI  </p>
+                <p id="titulos">2001-2003 : Administración Bancaria - universidad Jauretche </p>
+                <p id="titulos"> 2004-2011 : Analista de Sistemas - Universidad Guido Ditelle </p>
+                
+                <span>:</span>
+                <span class="div-datosII fw-bold" id="pais"></span>
+            </div>
+        </div>  -->
